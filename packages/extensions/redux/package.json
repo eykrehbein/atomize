@@ -1,0 +1,27 @@
+{
+  "name": "@atomize/redux",
+  "description": "Redux features for Atomize.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomizeorg/atomize.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "styles",
+    "context"
+  ],
+  "author": "Eyk Rehbein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atomizeorg/atomize/issues"
+  },
+  "homepage": "https://github.com/atomizeorg/atomize#readme",
+  "publishConfig": {
+    "directory": "dist"
+  }
+}
