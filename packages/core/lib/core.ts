@@ -5,4 +5,6 @@ const atomize: AtomizeCore = {
     createContext,
 };
 
+export { createContext };
+
 export default atomize;
