@@ -11,6 +11,6 @@
     "scripts": {
         "build": "lerna run build",
         "test": "lerna run scoped-test",
-        "publish": "lerna publish"
+        "lerna-publish": "lerna publish"
     }
 }

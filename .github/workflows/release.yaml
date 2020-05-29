@@ -18,5 +18,5 @@ jobs:
             - uses: actions/setup-node@v1
             - run: yarn install
             - run: yarn build
-            - run: yarn test
-            - run: yarn publish
+            - run: yarn test|
+            - run: yarn lerna-publish|
