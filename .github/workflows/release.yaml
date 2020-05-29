@@ -8,23 +8,15 @@ on:
         branches: [master]
 
 jobs:
-    build:
+    build_test_publish:
+        name: Build, test and publish
         runs-on: ubuntu-latest
+        env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v1
             - run: yarn install
             - run: yarn build
-    test:
-        needs: build
-        runs-on: ubuntu-latest
-        steps:
             - run: yarn test
-
-    publish:
-        needs: test
-        runs-on: ubuntu-latest
-        env:
-            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        steps:
             - run: yarn publish
