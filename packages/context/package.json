@@ -1,6 +1,6 @@
 {
     "name": "@atomize/context",
-    "version": "0.1.0",
+    "version": "0.0.0",
     "description": "Opinionated React Context Toolbox",
     "main": "dist/context.js",
     "source": "lib/context.tsx",
@@ -21,6 +21,7 @@
     },
     "homepage": "https://github.com/atomizeorg/atomize#readme",
     "publishConfig": {
+        "access": "public",
         "directory": "."
     },
     "scripts": {
@@ -60,5 +61,5 @@
         "ts-jest": "^26.0.0",
         "typescript": "^3.9.3"
     },
-    "gitHead": "cc4d198b80e677569a55bfe856218509750edfbe"
+    "gitHead": "da99ac6b839850ffeda3106b59e58e2ca6f5f461"
 }
