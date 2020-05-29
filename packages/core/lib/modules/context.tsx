@@ -4,9 +4,9 @@ export interface AtomizeContextModule {
     createContext: AtomizeCreateContext;
 }
 
-export type AtomizeCreateContext = <T>(
+type AtomizeCreateContext = <T>(
     defaultValues: T,
-    computeProviderValues?: () => T
+    computeProviderValue: () => T
 ) => {
     Context: React.Context<T>;
     Provider: React.ComponentType | null;
@@ -14,19 +14,27 @@ export type AtomizeCreateContext = <T>(
 
 export const createContext: AtomizeCreateContext = (
     defaultValues,
-    computeProviderValues
+    computeProviderValue
 ) => {
     const Context = reactCreateContext(defaultValues);
 
-    if (!computeProviderValues) {
-        return { Context, Provider: null };
-    }
-
-    const Provider = ({ children }: { children: React.ReactNode }) => {
-        const values = computeProviderValues();
-
-        return <Context.Provider value={values}>{children}</Context.Provider>;
-    };
+    const Provider = createProvider(Context, computeProviderValue);
 
     return { Context, Provider };
+};
+
+type AtomizeCreateProvider = <T>(
+    context: React.Context<T>,
+    computeProviderValues: () => T
+) => React.ComponentType;
+
+export const createProvider: AtomizeCreateProvider = (
+    context,
+    computeProviderValue
+) => {
+    return ({ children }: { children: React.ReactNode }) => {
+        const value = computeProviderValue();
+
+        return <context.Provider value={value}>{children}</context.Provider>;
+    };
 };
