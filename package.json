@@ -9,6 +9,7 @@
         "tests/*"
     ],
     "scripts": {
+        "build": "lerna run build",
         "test": "lerna run scoped-test",
         "publish": "lerna publish"
     }
