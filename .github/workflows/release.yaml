@@ -1,0 +1,30 @@
+name: Publish a new release
+
+on:
+    release:
+        types: [created]
+    # TESTING ONLY
+    push:
+        branches: [master]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+            - run: yarn install
+            - run: yarn build
+    test:
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+            - run: yarn test
+
+    publish:
+        needs: test
+        runs-on: ubuntu-latest
+        env:
+            NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        steps:
+            - run: yarn publish

@@ -1,1 +1,0 @@
-# Atomize Redux Extension
