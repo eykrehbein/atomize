@@ -1,7 +1,7 @@
 {
     "name": "@atomize/test-context",
     "private": true,
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "scripts": {
         "scoped-test": "jest"
@@ -15,8 +15,8 @@
         "ts-jest": "^26.0.0"
     },
     "dependencies": {
+        "@atomize/context": "^0.1.1",
         "react": "16",
-        "react-dom": "16",
-        "@atomize/context": "0.1.0"
+        "react-dom": "16"
     }
 }
