@@ -1,15 +1,20 @@
 import React, { createContext as reactCreateContext } from "react";
 
-export interface AtomizeContextModule {
-    createContext: AtomizeCreateContext;
-}
+// --- STANDALONE TYPES ---
+
+export type ContextStateObject<T> = {
+    value: T;
+    setValue: React.Dispatch<React.SetStateAction<T>>;
+};
+
+// --- METHODS ---
 
 type AtomizeCreateContext = <T>(
     defaultValues: T,
     computeProviderValue: () => T
 ) => {
     Context: React.Context<T>;
-    Provider: React.ComponentType | null;
+    Provider: React.ComponentType;
 };
 
 export const createContext: AtomizeCreateContext = (
@@ -31,10 +36,16 @@ type AtomizeCreateProvider = <T>(
 export const createProvider: AtomizeCreateProvider = (
     context,
     computeProviderValue
-) => {
-    return ({ children }: { children: React.ReactNode }) => {
-        const value = computeProviderValue();
+) => ({ children }: { children: React.ReactNode }) => {
+    const value = computeProviderValue();
 
-        return <context.Provider value={value}>{children}</context.Provider>;
-    };
+    return <context.Provider value={value}>{children}</context.Provider>;
 };
+
+type AtomizeCreateEmptyStateObject = <T>(
+    defaultValue: T
+) => ContextStateObject<T>;
+
+export const createEmptyStateObject: AtomizeCreateEmptyStateObject = (
+    defaultValue
+) => ({ value: defaultValue, setValue: () => {} });

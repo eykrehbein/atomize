@@ -1,9 +1,9 @@
 {
-    "name": "@atomize/core",
+    "name": "@atomize/context",
     "version": "0.1.0",
-    "description": "Modular, type-safe and opinionated toolbox for React applications.",
-    "main": "dist/core.js",
-    "source": "lib/core.ts",
+    "description": "Opinionated React Context Toolbox",
+    "main": "dist/context.js",
+    "source": "lib/context.tsx",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/atomizeorg/atomize.git"
