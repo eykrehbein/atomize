@@ -6,6 +6,9 @@
     },
     "workspaces": [
         "packages/*",
-        "testing/"
-    ]
+        "tests/*"
+    ],
+    "scripts": {
+        "test": "lerna run scoped-test"
+    }
 }
