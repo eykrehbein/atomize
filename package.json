@@ -6,12 +6,14 @@
     },
     "workspaces": [
         "packages/*",
-        "tests/*"
+        "tests/*",
+        "docs/website"
     ],
     "scripts": {
         "build": "lerna run build",
         "test": "lerna run scoped-test",
         "lint": "lerna run lint",
-        "lerna-publish": "lerna publish"
+        "lerna-publish": "lerna publish",
+        "docs": "lerna run docs-start"
     }
 }
