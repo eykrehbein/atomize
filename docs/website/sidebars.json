@@ -1,0 +1,10 @@
+{
+    "docs": {
+        "Getting started": ["overview"],
+        "@atomize/context": ["doc2"],
+        "@atomize/redux": ["doc3"]
+    },
+    "docs-other": {
+        "First Category": ["doc4", "doc5"]
+    }
+}
