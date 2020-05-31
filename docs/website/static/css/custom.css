@@ -7,8 +7,12 @@
 
 /* your custom css */
 
-* {
+*:not(.hljs > *) {
     font-family: $defaultFont !important;
+}
+
+code {
+    font-family: $codeFont !important;
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {

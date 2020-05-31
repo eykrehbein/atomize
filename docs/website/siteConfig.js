@@ -44,6 +44,7 @@ const siteConfig = {
     /* Custom fonts for website */
     fonts: {
         defaultFont: ["Rubik", "-apple-system", "system-ui"],
+        codeFont: ["Source Code Pro"],
     },
 
     // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
@@ -51,13 +52,16 @@ const siteConfig = {
 
     highlight: {
         // Highlight.js theme to use for syntax highlighting in code blocks.
-        theme: "default",
+        theme: "dracula",
     },
 
     // Add custom scripts here that would be placed in <script> tags.
     scripts: ["https://buttons.github.io/buttons.js"],
 
-    stylesheets: ["https://fonts.googleapis.com/css?family=Rubik:400,500,700"],
+    stylesheets: [
+        "https://fonts.googleapis.com/css?family=Rubik:400,500,700",
+        "https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap",
+    ],
 
     // On page navigation for the current documentation page.
     onPageNav: "separate",

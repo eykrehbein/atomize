@@ -30,7 +30,7 @@ export const createContext: AtomizeCreateContext = (
 
 type AtomizeCreateProvider = <T = unknown>(
     context: React.Context<T>,
-    computeProviderValues: () => T
+    computeProviderValue: () => T
 ) => React.ComponentType;
 
 export const createProvider: AtomizeCreateProvider = (
