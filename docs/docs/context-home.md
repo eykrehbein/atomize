@@ -19,7 +19,7 @@ npm install @atomize/context
 ```
 
 ```text
-yarn install @atomize/context
+yarn add @atomize/context
 ```
 
 ## Concepts
