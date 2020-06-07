@@ -20,9 +20,6 @@
         "url": "https://github.com/atomizeorg/atomize/issues"
     },
     "homepage": "https://github.com/atomizeorg/atomize#readme",
-    "publishConfig": {
-        "directory": "dist"
-    },
     "scripts": {
         "build": "microbundle-crl --no-compress --format modern,cjs",
         "start": "microbundle-crl watch --no-compress --format modern,cjs",
