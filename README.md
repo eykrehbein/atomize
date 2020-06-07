@@ -16,8 +16,6 @@ A collection of tiny, modular & type-safe libraries that enhance the default Rea
 
 ## Philosophy
 
-_What?_
-
 > The basic idea behind Atomize, as the name suggests, is to provide several **modular** toolkits to improve and simplify various workflows in React.
 
 Some characteristics of each library:
@@ -26,17 +24,13 @@ Some characteristics of each library:
 -   tiny size
 -   completely type-safe
 
-_Why?_
-
-> [I](https://github.com/eykrehbein) started the project because I often had to create new abstract components and the boilerplate code got on my nerves. So I thought about how I can abstract my ideas and help other people as well.
-
 # Documentation
 
 ## @atomize/component
 
 _What?_
 
-This library is a toolkit for creating stylizable and extensible React components. It is based on [styled-components](https://styled-components.com) and integrates [Framer Motion](https://www.framer.com/motion) for animations. Additionally, it integrates some [helper](#) functions that make styling easier.
+This library is a toolkit for creating stylizable and extensible React components. It is based on [styled-components](https://styled-components.com) and integrates [Framer Motion](https://www.framer.com/motion) for animations. Additionally, it integrates some [helper](#helper-functions) functions that make styling easier.
 
 _Getting started_
 
