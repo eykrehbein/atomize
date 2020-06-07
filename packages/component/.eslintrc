@@ -8,6 +8,7 @@
         "prettier/react",
         "plugin:@typescript-eslint/eslint-recommended"
     ],
+    "plugins": ["@typescript-eslint"],
     "env": {
         "node": true
     },
@@ -23,12 +24,21 @@
             "version": "16"
         }
     },
+    "overrides": [
+        {
+            "files": ["*.ts", "*.tsx"],
+            "rules": {
+                "@typescript-eslint/no-unused-vars": [2, { "args": "none" }]
+            }
+        }
+    ],
     "rules": {
         "space-before-function-paren": 0,
         "react/prop-types": 0,
         "react/jsx-handler-names": 0,
         "react/jsx-fragments": 0,
         "react/no-unused-prop-types": 0,
-        "import/export": 0
+        "import/export": 0,
+        "no-unused-vars": "off"
     }
 }

@@ -27,7 +27,7 @@
     "scripts": {
         "build": "microbundle-crl --no-compress --format modern,cjs",
         "start": "microbundle-crl watch --no-compress --format modern,cjs",
-        "lint": "eslint ."
+        "lint": "eslint './lib/*.{ts,tsx}'"
     },
     "dependencies": {
         "@types/styled-components": "^5.0.0",
