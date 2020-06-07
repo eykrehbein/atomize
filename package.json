@@ -13,7 +13,7 @@
         "build": "lerna run build",
         "test": "lerna run scoped-test",
         "lint": "lerna run lint",
-        "lerna-publish": "lerna publish",
+        "lerna-publish": "yarn build && yarn test && lerna publish",
         "docs": "lerna run docs-start",
         "docs-build": "lerna run docs-build"
     }
