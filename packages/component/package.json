@@ -30,10 +30,9 @@
         "lint": "eslint ."
     },
     "dependencies": {
-        "styled-components": "^5.0.0",
-        "framer-motion": "^1.11.0",
         "csstype": "2.6.10",
-        "csx": "10.0.1"
+        "framer-motion": "^1.11.0",
+        "styled-components": "^5.0.0"
     },
     "peerDependencies": {
         "react": "^16.0.0"
@@ -41,9 +40,9 @@
     "devDependencies": {
         "@types/jest": "^25.2.3",
         "@types/react": "^16.9.27",
+        "@types/styled-components": "^5.0.0",
         "@typescript-eslint/eslint-plugin": "^2.26.0",
         "@typescript-eslint/parser": "^2.26.0",
-        "@types/styled-components": "^5.0.0",
         "babel-eslint": "^10.0.3",
         "cross-env": "^7.0.2",
         "eslint": "^6.8.0",
