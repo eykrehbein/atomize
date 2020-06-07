@@ -1,6 +1,6 @@
 {
     "name": "@atomize/context",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Opinionated React Context Toolbox",
     "main": "dist/context.js",
     "source": "lib/context.tsx",
