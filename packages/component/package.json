@@ -19,6 +19,10 @@
     "bugs": {
         "url": "https://github.com/atomizeorg/atomize/issues"
     },
+    "publishConfig": {
+        "access": "public",
+        "directory": "."
+    },
     "homepage": "https://github.com/atomizeorg/atomize#readme",
     "scripts": {
         "build": "microbundle-crl --no-compress --format modern,cjs",
@@ -59,5 +63,6 @@
         "react-dom": "^16.13.1",
         "react-scripts": "^3.4.1",
         "typescript": "^3.9.3"
-    }
+    },
+    "gitHead": "0e6c25dd8f85f3b291917939fcf2309e784ac883"
 }
