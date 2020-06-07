@@ -1,6 +1,6 @@
 {
     "name": "@atomize/component",
-    "version": "0.2.2",
+    "version": "0.2.3",
     "description": "",
     "main": "dist/component.js",
     "source": "lib/component.tsx",
@@ -30,10 +30,10 @@
         "lint": "eslint ."
     },
     "dependencies": {
+        "@types/styled-components": "^5.0.0",
         "csstype": "2.6.10",
         "framer-motion": "^1.11.0",
-        "styled-components": "^5.0.0",
-        "@types/styled-components": "^5.0.0"
+        "styled-components": "^5.0.0"
     },
     "peerDependencies": {
         "react": "^16.0.0"
