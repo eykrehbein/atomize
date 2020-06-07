@@ -12,7 +12,7 @@ A collection of tiny, modular & type-safe libraries that enhance the default Rea
 -   [@atomize/component](#atomizecomponent) - A toolkit for creating stylizable and extensible React components
 -   [@atomize/context](#atomizecontext) - Enhanced React-Context management
 
--   more currently in progress...
+-   (WIP) @atomize/redux
 
 ## Philosophy
 
