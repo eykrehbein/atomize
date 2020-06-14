@@ -18,11 +18,7 @@ describe("testing createBaseComponent", () => {
             color: red;
         `;
 
-        const wrapper = shallow(
-            <Text s={{ fontSize: px(18) }}>Hello World</Text>
-        );
-
-        expect(wrapper.get(0).props.s.fontSize).toEqual("18px");
+        const wrapper = shallow(<Text $fontSize={px(18)}>Hello World</Text>);
     });
 });
 
