@@ -18,6 +18,43 @@ A collection of tiny, modular & type-safe libraries that enhance the default Rea
 
 You can find a well structured documentation at [docs.atomize.xyz](https://docs.atomize.xyz)
 
+## Examples (more can be found in the docs)
+
+### Creating stylable and animatable components
+
+```tsx
+import { createBaseComponent, px, percent } from "@atomize/component";
+
+const Button = createBaseComponent("button")`
+  background-color: red;
+`;
+
+export const App = () => (
+    <Button animate={{ width: percent(100) }} $color="red" $marginTop={px(20)}>
+        Click
+    </Button>
+);
+```
+
+### Creating context and provider at the same time
+
+```tsx
+import { createContext } from "@atomize/context";
+
+const { Context, Provider } = createContext(
+    { email: "test@atomize.xyz" },
+    () => {
+        if (condition) return { email: "conditionTrue@atomize.xyz" };
+
+        return { email: "conditionFalse@atomize.xyz" };
+    }
+);
+
+// ---
+
+const App = () => <Provider>Hello World</Provider>;
+```
+
 # LICENSE
 
 MIT
