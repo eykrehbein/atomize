@@ -62,7 +62,7 @@ export const createBaseComponent = <T extends keyof JSX.IntrinsicElements>(
         return parsedString;
     };
 
-    const values = [...b, parseFunc];
+    const values = [...b, ";", parseFunc];
 
     // @ts-ignore
     return styled(motion[target])(a, values);
