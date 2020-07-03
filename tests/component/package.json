@@ -1,7 +1,7 @@
 {
     "name": "@atomize/test-component",
     "private": true,
-    "version": "0.3.2",
+    "version": "0.3.3",
     "license": "MIT",
     "scripts": {
         "scoped-test": "jest"
@@ -15,7 +15,7 @@
         "ts-jest": "^26.0.0"
     },
     "dependencies": {
-        "@atomize/component": "^0.3.2",
+        "@atomize/component": "^0.3.3",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
         "styled-components": "^5.1.1"
